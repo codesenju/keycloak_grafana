@@ -29,8 +29,23 @@ docker-compose up -d keycloak
 ![mappings_3](media/group_mapping_5-7.jpg)
 ![mappings_3](media/group_mapping_updated.jpg)
 - ## repeat for grafana_editor:
+- ## Add User to group
+- ## Create Client mappings:
+![client_mappings](media/client_mapper.jpg)
 
-# Check Realm Endpoints:
+# Start grafana
+```
+docker-compose up -d
+```
+```
+docker-compose ps
+```
+## Go to [https//localhost:8443](http//localhost:4000)
+
+# Video
+![keycloak](media/keycloak.gif)
+# References
+## Check Realm Endpoints:
 ```
 {{server}}/auth/realms/{{realm}}/.well-known/openid-configuration
 ```
@@ -38,10 +53,3 @@ docker-compose up -d keycloak
 https://localhost:8443/realms/demo/.well-known/openid-configurationhttps://localhost:8443/realms/Demo/.well-known/openid-configuration
 ```
 
-```
-docker-compose up -d
-```
-
-
-# Video
-![keycloak](media/keycloak.gif)
