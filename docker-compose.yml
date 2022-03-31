@@ -7,7 +7,7 @@ networks:
   keycloak_net:
     external: true  
 services:
-# Grafana
+# Monitoring - Grafana & Nginx
   proxy:
     image: nginx:alpine
     container_name: nginx
@@ -62,6 +62,7 @@ services:
       options:
         fluentd-address: localhost:24224
         tag: monitoring
+# DevSecOps - Keycloak
   keycloak:
     image: quay.io/keycloak/keycloak:17.0.1
     env_file:
@@ -102,7 +103,7 @@ services:
       options:
         fluentd-address: localhost:24224
         tag: DevSecOps
-# Log Aggregation
+# Log Aggregation - fluent-bit & elasticsearch
   fluent-bit:
     image: fluent/fluent-bit:1.9.0
     container_name: fluent-bit

@@ -14,7 +14,7 @@ docker-compose up -d keycloak
 - ## Create client grafana:
 ![client](media/client.jpg)
 - ## Copy secret to grafana config file:
-![secret](secret.jpg)
+![secret](media/secret.jpg)
 ![grafana_config](media/grafana_config.jpg)
 
 - ## Create Roles:
