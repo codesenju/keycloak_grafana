@@ -1,0 +1,16 @@
+.login-pf body {
+    background-image: url('../img/img.jpg');
+    background-size: cover;
+}
+#kc-header-wrapper {
+    font-size: 45px;
+}
+.pf-c-button.pf-m-primary {
+    background-color: #182c37;
+}
+.card-pf {
+    border-color: #192b37;
+}
+.pf-c-form-control {
+    --pf-global--primary-color--100: #192b37;
+}
