@@ -58,7 +58,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": null,
-  "iteration": 1648732008147,
+  "iteration": 1648795228188,
   "links": [],
   "panels": [
     {
@@ -454,13 +454,10 @@
               {
                 "color": "green",
                 "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
               }
             ]
-          }
+          },
+          "unit": "short"
         },
         "overrides": []
       },
@@ -473,12 +470,12 @@
       "id": 8,
       "options": {
         "colorMode": "value",
-        "graphMode": "area",
-        "justifyMode": "center",
-        "orientation": "horizontal",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "lastNotNull"
+            "sum"
           ],
           "fields": "",
           "values": false
@@ -497,7 +494,7 @@
               "settings": {
                 "min_doc_count": "0",
                 "order": "desc",
-                "orderBy": "_term",
+                "orderBy": "_count",
                 "size": "10"
               },
               "type": "terms"
@@ -534,7 +531,7 @@
       "id": 2,
       "options": {
         "showLabels": false,
-        "showTime": false,
+        "showTime": true,
         "sortOrder": "Descending",
         "wrapLogMessage": false
       },
@@ -633,5 +630,5 @@
   "timezone": "",
   "title": "Container Logs",
   "uid": "JM3TUby7k",
-  "version": 9
+  "version": 12
 }

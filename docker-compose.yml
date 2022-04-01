@@ -90,6 +90,7 @@ services:
       - '--db-password=${POSTGRESQL_PASS}'
     volumes: 
       - ./certs:/certs
+      - ./themes/:/opt/keycloak/themes
     ports:
       - "8443:8443"
     restart: unless-stopped

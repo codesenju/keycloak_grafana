@@ -1,0 +1,42 @@
+version: "3"
+networks:
+  keycloak_net:
+    external: true
+services:
+    app_1:
+        image: nginx
+        container_name: app_1
+        networks:
+            - keycloak_net
+        logging:
+           driver: "fluentd"
+           options:
+             fluentd-address: localhost:24224
+             tag: DevSecOps
+    app_2:
+        image: nginx
+        container_name: app_2
+        networks:
+            - keycloak_net
+        logging:
+          driver: "fluentd"
+          options:
+            fluentd-address: localhost:24224
+            tag: DevSecOps
+    nginx:
+        build:
+          context: .
+          container_name: app-nginx
+        ports:
+            - 3002:3002
+            - 4090:4090            
+        networks:
+            - keycloak_net
+        volumes: 
+            - ./nginx.conf:/etc/nginx/conf.d/default.conf
+            - ../certs/:/certs
+        logging:
+          driver: "fluentd"
+          options:
+            fluentd-address: localhost:24224
+            tag: DevSecOps
