@@ -47,7 +47,7 @@ docker-compose ps
 # References
 ## Check Realm Endpoints:
 ```
-{{server}}/auth/realms/{{realm}}/.well-known/openid-configuration
+{{server}}/realms/{{realm}}/.well-known/openid-configuration
 ```
 ```
 https://localhost:8443/realms/demo/.well-known/openid-configuration
