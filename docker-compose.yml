@@ -88,6 +88,9 @@ services:
       - '--db-url-host=postgres'
       - '--db-username=${POSTGRESQL_USER}'
       - '--db-password=${POSTGRESQL_PASS}'
+      - '--spi-theme-static-max-age=-1'
+      - '--spi-theme-cache-themes=false'
+      - '--spi-theme-cache-templates=false'
     volumes: 
       - ./certs:/certs
       - ./themes/:/opt/keycloak/themes

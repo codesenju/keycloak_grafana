@@ -26,7 +26,7 @@ services:
     nginx:
         build:
           context: .
-          container_name: app-nginx
+        container_name: app-nginx
         ports:
             - 3002:3002
             - 4090:4090            
