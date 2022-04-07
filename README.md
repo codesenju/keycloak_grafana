@@ -51,6 +51,7 @@ docker-compose ps
 ![keycloak](media/keycloak.gif)
 # References
 - [Convert openssl .key file to .pem](https://gist.github.com/amolkhanorkar/10375087)
+- - https://github.com/Alfresco/alfresco-keycloak-theme
 ## Check Realm Endpoints:
 ```
 {{server}}/realms/{{realm}}/.well-known/openid-configuration

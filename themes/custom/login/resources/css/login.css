@@ -52,6 +52,22 @@ body {
   margin-left: 32px;
   margin-top: 40px;
 }
+
+.login-content .box .sign-in-info {
+  width: 270px;
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #009ea7;
+  margin-left: 32px;
+  margin-top: 40px;
+}
+
 .login-content .box .form {
   margin-left: 32px;
   margin-top: 55px;
