@@ -39,6 +39,8 @@ services:
     depends_on:
       postgres:
          condition: service_healthy
+      fluent-bit:
+         condition: service_started
     logging:
       driver: "fluentd"
       options:
@@ -57,6 +59,8 @@ services:
     depends_on:
       postgres:
          condition: service_healthy
+      fluent-bit:
+         condition: service_started
     logging:
       driver: "fluentd"
       options:
@@ -102,6 +106,8 @@ services:
     depends_on:
       postgres:
          condition: service_healthy
+      fluent-bit:
+         condition: service_started
     logging:
       driver: "fluentd"
       options:
@@ -134,6 +140,8 @@ services:
     mem_limit: 1g
     networks:
        - keycloak_net
+    depends_on:
+      - fluent-bit
     logging:
       driver: "fluentd"
       options:
@@ -155,6 +163,8 @@ services:
       - keycloak_net
     healthcheck:
       test: pg_isready -U keycloak
+    depends_on:
+      - fluent-bit
     logging:
       driver: "fluentd"
       options:

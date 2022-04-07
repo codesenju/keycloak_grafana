@@ -1,4 +1,9 @@
 # Setup
+## Create SSL Certificate using minica:
+```bash
+cd certs
+minica --domains 'localhost'
+```
 ### Create network keycloak_net:
 ```
 docker network create keycloak_net
@@ -45,6 +50,7 @@ docker-compose ps
 # Video
 ![keycloak](media/keycloak.gif)
 # References
+- [Convert openssl .key file to .pem](https://gist.github.com/amolkhanorkar/10375087)
 ## Check Realm Endpoints:
 ```
 {{server}}/realms/{{realm}}/.well-known/openid-configuration
