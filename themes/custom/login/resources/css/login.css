@@ -48,7 +48,7 @@ body {
   line-height: 0.83;
   letter-spacing: -0.4px;
   text-align: left;
-  color: #009ea7;
+  color: #000000;
   margin-left: 32px;
   margin-top: 40px;
 }
@@ -63,7 +63,7 @@ body {
   line-height: 0.83;
   letter-spacing: -0.4px;
   text-align: left;
-  color: #009ea7;
+  color: #797979;
   margin-left: 32px;
   margin-top: 40px;
 }
@@ -195,5 +195,25 @@ body {
 
 
 .login-content .box .submit {
-    background-color: #009ea7;
+    background-color: #000000;
 }
+
+footer {
+background-color: #ffffff;
+}
+
+footer .footer-logos {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+
+footer .footer-band {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+background-size: cover;
+  }

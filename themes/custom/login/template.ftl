@@ -17,7 +17,7 @@
 
 	<body>
         <#nested "header">
-        <div class="login-content" style="background-image: url(&quot;${url.resourcesPath}/img/background.svg&quot;);">
+        <div class="login-content" style="background-image: url(&quot;${url.resourcesPath}/img/background.png&quot;);">
             <div class="box">
         <#if displayMessage && message?has_content>
         <div class="alert alert-${message.type}">
@@ -31,6 +31,19 @@
         <#nested "form">
             </div> 
         </div>
+
+
+          <#-- Start  footer -->
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+        <div class="footer-band">
+            <img src="${url.resourcesPath}/img/coloredband.png" alt="band">
+        </div>
+            <div class="footer-logos">
+                <img src="${url.resourcesPath}/img/banner_divisions.png" alt="banner-logos">
+            </div>
+ 
+    </footer>
 	</body>
 </html>
 </#macro>
